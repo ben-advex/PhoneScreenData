@@ -15,7 +15,7 @@ def plot_masks_and_scores(image, masks, scores=None, num_cols=3):
     - masks (numpy.ndarray): A boolean array of shape (num_objects, H, W).
     - num_cols (int): Number of columns in the grid.
     """
-    plt.close('all')
+    #plt.close('all')
     num_masks = masks.shape[0]
     # Correctly calculate grid size
     num_rows = int(np.ceil((num_masks + 1) / num_cols))
